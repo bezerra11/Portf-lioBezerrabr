@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pessoal</title>
+  <style>
+    :root {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --accent: #1db954;
+      --card-bg: #1f1f1f;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background: var(--card-bg);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .about p {
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      background: #2a2a2a;
+      color: var(--text);
+    }
+
+    button {
+      padding: 1rem;
+      background: var(--accent);
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--card-bg);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Bezerra Progamação</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2 class="section-title">Sobre Mim</h2>
+    <div class="about">
+      <p>Olá! Eu sou Aniel bezerra dantas, um desenvolvedor apaixonado por tecnologia, design e criar experiências digitais incríveis. Tenho experiência em front-end, back-end, HTML e estou sempre aprendendo algo novo.</p>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2 class="section-title">Projetos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Projeto 1</h3>
+          <img src="imagem/projeto1.jpeg" alt="Imagem do Projeto 1" style="width:100%; border-radius:10px; margin: 1rem 0;">
+    <p><a href="#" style="color: var(--accent);">Ver mais</a></p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p><br> <a href="#" style="color: var(--accent);">Ver mais</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>HTML & CSS</h4>
+      </div>
+      <div class="card">
+        <h4>JavaScript</h4>
+      </div>
+      <div class="card">
+        <h4>Python</h4>
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2 class="section-title">Contato</h2>
+    <form action="#" method="post">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bezerra Programação. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
