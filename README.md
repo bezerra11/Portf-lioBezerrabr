@@ -5,4 +5,4 @@ Este é o meu site pessoal, criado com HTML e CSS puro, com foco em apresentar m
 ## Como visualizar
 
 Acesse via GitHub Pages após publicação:
-https://seu-usuario.github.io/meu-site/
+https://bezerra11.github.io/Portfóliobezerrabr/
